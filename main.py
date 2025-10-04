@@ -1,9 +1,9 @@
 import os
 from contextlib import asynccontextmanager
 from http import HTTPStatus
-from dotenv import load_dotenv
-from fastapi import FastAPI, Request, Response
-from telegram import Update
+from dotenv import load_dotenv   # pip install dotenv
+from fastapi import FastAPI, Request, Response   # pip install fastapi
+from telegram import Update    # pip install python-telegram-bot==20.3
 from telegram.ext import Application, ContextTypes, CommandHandler, MessageHandler, filters
 
 # Load environment variables
